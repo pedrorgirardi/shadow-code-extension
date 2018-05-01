@@ -1,0 +1,9 @@
+{:dependencies []
+
+ :source-paths ["src"]
+
+ :builds
+ {:extension
+  {:target :node-library
+   :exports {:activate shadow-code-extension.core/activate}
+   :output-to "extension.js"}}}

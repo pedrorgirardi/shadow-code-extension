@@ -1,0 +1,34 @@
+{
+    "name": "shadowcodeextension",
+    "displayName": "Shadow Code Extension Template",
+    "description": "Shadow Code Extension Template",
+    "version": "0.0.1",
+    "publisher": "pedrorgirardi",
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:shadow.code.extension.welcome"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "title": "Welcome",
+                "category": "Shadow Code Extension",
+                "command": "shadow.code.extension.welcome"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "shadow-cljs": "^2.3.12",
+        "vscode": "^1.1.16"
+    }
+}
